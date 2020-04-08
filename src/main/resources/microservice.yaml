@@ -1,19 +1,21 @@
 APPLICATION_ID: helloTestxs
 service_description:
   name: helloworldproviderxs
-  version: 0.0.2
+  version: 0.0.3
   properties:
     allowCrossApp: false
 cse:
   service:
     registry:
-      address: http://127.0.0.1:30100
+#      address: http://127.0.0.1:30100
+      address: https://cse.cn-east-3.myhuaweicloud.com
       #https://cse.cn-south-1.myhuaweicloud.com
       instance:
         watch: false
-#  config:
-#    client:      
-#      serverUri: http://127.0.0.1:30100 
+  config:
+    client:
+#      serverUri: http://127.0.0.1:30100
+      serverUri: https://cse.cn-east-3.myhuaweicloud.com
       #https://cse.cn-south-1.myhuaweicloud.com
       refreshMode: 1
       refresh_interval: 5000
@@ -27,4 +29,4 @@ cse:
     accessKey: CRN2T1OQUNI3VSCRDCDT
     secretKey: vSHQBMObBp0nmsCGcc5bQIr7NZLmCRDUiYx6lYLO
     akskCustomCipher: default
-    #project: cn-south-1
+#    project: cn-east-3
